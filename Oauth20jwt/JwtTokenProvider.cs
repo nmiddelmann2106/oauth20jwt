@@ -5,7 +5,6 @@ using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using Oauth20jwt.Entities;
 using Oauth20jwt.Exceptions;
-using Styra.Omni.WebService.Helper;
 
 namespace Oauth20jwt
 {

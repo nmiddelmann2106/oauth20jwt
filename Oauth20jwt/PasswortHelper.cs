@@ -1,9 +1,7 @@
-﻿using System;
-using System.IO;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace Styra.Omni.WebService.Helper
+namespace Oauth20jwt
 {
     public class PasswortHelper
     {
@@ -11,8 +9,8 @@ namespace Styra.Omni.WebService.Helper
         {
             try
             {
-                const string publickey = "12345678";
-                const string secretkey = "87654321";
+                const string publickey = "12345678"; // ToDo
+                const string secretkey = "87654321"; // ToDo
                 var secretkeyByte = Encoding.UTF8.GetBytes(secretkey);
                 var publickeybyte = Encoding.UTF8.GetBytes(publickey);
                 var inputbyteArray = Encoding.UTF8.GetBytes(password);
@@ -33,8 +31,8 @@ namespace Styra.Omni.WebService.Helper
         {
             try
             {
-                const string publickey = "12345678";
-                const string secretkey = "87654321";
+                const string publickey = "12345678"; // ToDo
+                const string secretkey = "87654321"; // ToDo
                 var privatekeyByte = Encoding.UTF8.GetBytes(secretkey);
                 var publickeybyte = Encoding.UTF8.GetBytes(publickey);
                 
